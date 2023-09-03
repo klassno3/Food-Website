@@ -49,8 +49,8 @@ const Navigation = () => {
       setSelectedTab( "home" )
     }
 
-    else if ( location.pathname === "/sign in" ) {
-      setSelectedTab( "sign in" )
+    else if ( location.pathname === "/sign up" ) {
+      setSelectedTab( "sign up" )
     }
     else if ( location.pathname === "/share" ) {
       setSelectedTab( "share" )
@@ -113,7 +113,9 @@ const Navigation = () => {
                 <FiShare2  className="transition-all duration-300 group-hover:text-Primary-Orange-100" size={25}/>
                   <p className="transition-all duration-300 group-hover:text-Primary-Orange-100">Share</p>
               </Link>
-                
+                 <Link onClick={ handleNavigation } className={ ` cursor-pointer hover:text-primary-200 ${ selectedTab === 'sign up' && selection === null ? " font-semibold" : '' } ` } to="/sign up">
+                <button className='bg-orange-500 transition-all duration-300 hover:bg-Primary-Orange-200 font-poppins tracking-widest text-white px-6 py-2 rounded-full'>Sign Up</button>
+              </Link>
             </div>
           </div>
             {/* End of Navigation For mobile  */ }
@@ -127,7 +129,7 @@ const Navigation = () => {
             </div>
             <div className="hidden  lg:flex items-center gap-5 justify-end">
             <GoSearch  className="transition-all duration-300 hover:text-Primary-Orange-100 "size={25}/>
-               <Link onClick={ handleNavigation } className={ ` cursor-pointer hover:text-primary-200 ${ selectedTab === 'sign in' && selection === null ? " font-semibold" : '' } ` } to="/sign in">
+               <Link onClick={ handleNavigation } className={ ` cursor-pointer hover:text-primary-200 ${ selectedTab === 'sign up' && selection === null ? " font-semibold" : '' } ` } to="/sign up">
                 <button className='bg-orange-500 transition-all duration-300 hover:bg-Primary-Orange-200 font-poppins tracking-widest text-white px-6 py-2 rounded-full'>Sign Up</button>
               </Link>
             </div>

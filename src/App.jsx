@@ -6,7 +6,7 @@ import Lunch from "./pages/Lunch"
 import Breakfast from "./pages/BreakFast"
 import Snack from "./pages/Snack"
 import Dinner from "./pages/Dinner"
-import SignIn from "./pages/SignIn"
+import SignUp from "./pages/SignUp"
 import {
   createBrowserRouter,
   Outlet,
@@ -46,8 +46,8 @@ function App () {
           element:<Login/>,
         },
         {
-          path: "sign in",
-          element:<SignIn/>,
+          path: "sign up",
+          element:<SignUp/>,
         },
         {
           path: "/share",
