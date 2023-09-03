@@ -94,7 +94,7 @@ const Navigation = () => {
         
             <Link onClick={ handleNavigation } to="/" className="flex flex-col">
             <img className=' w-8 sm:w-14' src={ Logo } alt="" />
-              <p className="font-pacifico ">Mn lbla</p>
+              <p className="font-pacifico ">Fooddie</p>
             </Link>
             {/* Start of Navigation For mobile  */}
           <div className="lg:hidden flex  justify-end cursor-pointer">
