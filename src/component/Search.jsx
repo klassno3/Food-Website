@@ -1,0 +1,42 @@
+import { useContext, useState } from "react";
+import {GoSearch} from "react-icons/go"
+
+const Search = () => {
+  const [ searchTerm, setSearchTerm ] = useState( "" );
+
+
+  const handleSubmit =(event)=> {
+    event.preventDefault();
+   
+    setSearchTerm("")
+  
+
+  }
+  const handleChange = (event) => {
+    setSearchTerm(event.target.value)
+
+    
+  }
+  return (
+    <div className="">
+      <form onSubmit={handleSubmit}>
+       
+      
+    
+        <div className="group transition-all duration-300 flex gap-3 items-center">
+          <button>
+
+          <GoSearch className="transition-all duration-300 group-hover:text-Primary-Orange-100" size={30}/>
+          </button>
+          
+    <input value={ searchTerm } onChange={ handleChange } className="hidden focus:outline-none focus:shadow-md  border-[1px] font-poppins px-6 py-3 transition-all duration-300 rounded-md border-Tertiary-Black-200/50 group-hover:flex w-8 h-8 group-hover:w-[200px] " type="search" placeholder="Search ....."/>
+      
+      </div>
+
+      </form>
+    </div>
+
+  )
+}
+
+export default Search

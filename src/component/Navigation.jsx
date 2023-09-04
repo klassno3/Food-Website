@@ -4,8 +4,9 @@ import Menu from "../Image/menu-alt.svg"
 import Close from "../Image/close.svg"
 import { Link, useLocation } from "react-router-dom"
 import DropDown from "../component/DropDown"
-import {GoSearch} from "react-icons/go"
+
 import {FiShare2} from "react-icons/fi"
+import Search from './Search'
 
 const Navigation = () => {
   
@@ -85,16 +86,19 @@ const Navigation = () => {
   }
   return (
     
-    <div className={`sticky top-0 left-0 z-40  ${ active ? "bg-tertiary-100 shadow-lg  text-secondary-200" :"  bg-tertiary-100 shadow-none text-secondary-200" }`}>
-      <div className="max-w-[1440px mx-auto]  ">
+    <div className={`sticky top-0 left-0 z-40  ${ active ? "bg-white shadow-lg  text-secondary-200" :"  bg-tertiary-100 shadow-none text-secondary-200" }`}>
+      <div className="max-w-[1440px] mx-auto  ">
         
       <div className="w-11/12 mx-auto ">
    
-      <div className=" grid  grid-cols-2 lg:grid-cols-3 justify-between items-center pt-4 pb-H3 md:pt-4 md:pb-4 ">
+      <div className=" grid  gird-flow-col grid-cols-2 lg:grid-cols-3 justify-between items-center p-2 md:p-3 ">
         
-            <Link onClick={ handleNavigation } to="/" className="flex flex-col">
+            <Link onClick={ handleNavigation } to="/" className="flex items-start ">
+              <div className="flex flex-col items-center">
+
             <img className=' w-8 sm:w-14' src={ Logo } alt="" />
-              <p className="font-pacifico ">Fooddie</p>
+              <p className="font-pacifico ">Mn Lbla</p>
+              </div>
             </Link>
             {/* Start of Navigation For mobile  */}
           <div className="lg:hidden flex  justify-end cursor-pointer">
@@ -106,9 +110,11 @@ const Navigation = () => {
 
             <img onClick={ handleClose } src={ Close } alt="" className={ `${ open ? "block" : "hidden" } cursor-pointer fixed top-[40px] right-[40px] sm:w-7 w-6 ` } />
             
-           <div className="flex  flex-col gap-10 font-poppins text-lg text-tertiary-300 tracking-wide">
+         
+              <div className="flex  flex-col gap-10 font-poppins text-lg text-tertiary-300 tracking-wide">
+                 
           <Link onClick={ handleNavigation } className={ `cursor-pointer transition-all duration-300 hover:text-Primary-Orange-100 ${ selectedTab === 'home' && selection === null ? "text-Primary-Orange-100 font-semibold" : '' } ` } to="/">Home</Link>
-              <div className=""><DropDown  options={ options } selection={ selection } onSelect={ handleSelect } /></div>
+              <div className=""><DropDown Close={setOpen}  options={ options } selection={ selection } onSelect={ handleSelect } /></div>
               <Link onClick={ handleNavigation } className={ `group cursor-pointer flex items-center gap-2  ${ selectedTab === 'share' && selection === null ? "text-Primary-Orange-100 font-semibold" : '' } ` } to="/share">
                 <FiShare2  className="transition-all duration-300 group-hover:text-Primary-Orange-100" size={25}/>
                   <p className="transition-all duration-300 group-hover:text-Primary-Orange-100">Share</p>
@@ -119,7 +125,7 @@ const Navigation = () => {
             </div>
           </div>
             {/* End of Navigation For mobile  */ }
-        <div className="hidden lg:flex  gap-16  lg:items-center font-poppins text-lg text-tertiary-300 tracking-widest">
+        <div className="hidden lg:flex gap-10 xl:gap-16  lg:items-center font-poppins text-lg text-tertiary-300 tracking-widest">
               <Link onClick={ handleNavigation } className={ `cursor-pointer transition-all duration-300 hover:text-Primary-Orange-100 ${ selectedTab === 'home' && selection === null ? "text-Primary-Orange-100 font-semibold" : '' } ` } to="/">Home</Link>
               <div className=""><DropDown options={ options } selection={ selection } onSelect={ handleSelect } /></div>
               <Link onClick={ handleNavigation } className={ `group cursor-pointer flex items-center gap-2  ${ selectedTab === 'share' && selection === null ? "text-Primary-Orange-100 font-semibold" : '' } ` } to="/share">
@@ -128,7 +134,7 @@ const Navigation = () => {
               </Link>
             </div>
             <div className="hidden  lg:flex items-center gap-5 justify-end">
-            <GoSearch  className="transition-all duration-300 hover:text-Primary-Orange-100 "size={25}/>
+              <Search/>
                <Link onClick={ handleNavigation } className={ ` cursor-pointer hover:text-primary-200 ${ selectedTab === 'sign up' && selection === null ? " font-semibold" : '' } ` } to="/sign up">
                 <button className='bg-orange-500 transition-all duration-300 hover:bg-Primary-Orange-200 font-poppins tracking-widest text-white px-6 py-2 rounded-full'>Sign Up</button>
               </Link>

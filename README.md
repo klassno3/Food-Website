@@ -1,10 +1,10 @@
 # Food
 
-## Fooddie is a website where people can discover, share, and interact with recipes. It provides a platform for food enthusiasts to showcase their culinary skills, explore new dishes, and engage with a vibrant community of like-minded individuals. Here are some of the key features of Fooddie:
+## Mn Lbla e is a website where people can discover, share, and interact with recipes. It provides a platform for food enthusiasts to showcase their culinary skills, explore new dishes, and engage with a vibrant community of like-minded individuals. Here are some of the key features of Mn Lbla :
 
 1. Recipe Sharing: Users can post their favorite recipes, including detailed ingredients, step-by-step instructions, and appealing food photographs. 
 
-2. Recipe Discovery: Fooddie allows users to search and explore a wide variety of recipes. They can filter recipes based  and discover new dishes and find inspiration for their next meal.
+2. Recipe Discovery: Mn Lbla  allows users to search and explore a wide variety of recipes. They can filter recipes based  and discover new dishes and find inspiration for their next meal.
 
 3. Ratings and Reviews: Users can rate and review recipes shared by others. This feature helps to build a trustworthy and reliable community of recipe contributors. It also enables users to find the best-rated recipes and gain insights from others' experiences.
 

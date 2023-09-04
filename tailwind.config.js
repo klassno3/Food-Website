@@ -19,8 +19,8 @@ module.exports = {
        'Secondary-Blue-100' :"#B7DCEF",     
        'Secondary-Blue-200' :"#",     
        'Secondary-Blue-300' :"#",     
-       'Primary-Black-100' :"#0000",     
-       'Primary-Black-200' :"#2D3748",     
+       'Tertiary-Black-100' :"#0000",     
+       'Tertiary-Black-200' :"#2D3748",     
        'Primary-Yellow-100' :"#FFB400",     
        'Primary-Yellow-200' :"#",     
        
