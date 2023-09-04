@@ -6,9 +6,9 @@ const Hero = () => {
     <div className=' w-11/12 mx-auto mt-10'>
       <div className="flex w-full sm:w-10/12 mx-auto lg:w-full lg:flex-row flex-col justify-center ">
         <div className="w-full  lg:w-3/5 ">
-          <img className="w-full h-full"src={HeroPic} alt="" />
+          <img className="rounded-l-md w-full h-full"src={HeroPic} alt="" />
         </div>
-        <div className="w-full bg-Secondary-Blue-100 lg:w-2/5 ">
+        <div className="w-full rounded-r-md bg-Secondary-Blue-100 lg:w-2/5 ">
           <div className="flex flex-col lg:items-center gap-4 lg:gap-7 pb-10  pt-10 lg:pt-20  px-5 sm:px-7  md:px-12 lg:px-10 justify-center">
               
             <div className="flex lg:items-center flex-col-reverse lg:flex-col gap-3 lg:gap-5">
