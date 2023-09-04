@@ -29,7 +29,7 @@ const Search = () => {
           <GoSearch className="transition-all duration-300 group-hover:text-Primary-Orange-100" size={30}/>
           </button>
           
-    <input value={ searchTerm } onChange={ handleChange } className="hidden focus:outline-none focus:shadow-md  border-[1px] font-poppins px-6 py-3 transition-all duration-300 rounded-md border-Tertiary-Black-200/50 group-hover:flex w-8 h-8 group-hover:w-[200px] " type="search" placeholder="Search ....."/>
+    <input value={ searchTerm } onChange={ handleChange } className="hidden focus:outline-none focus:shadow-md  border-[1px] font-poppins px-6 py-3 transition-all duration-300 rounded-md border-Tertiary-Black-200/50 group-hover:flex w-8 h-8 xl:group-hover:w-[200px] lg:group-hover:w-[130px]  " type="search" placeholder="Search ....."/>
       
       </div>
 
