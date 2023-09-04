@@ -3,7 +3,7 @@ import {BiTrendingUp} from "react-icons/bi"
 import HeroPic from "../Image/hero.jpg"
 const Hero = () => {
   return (
-    <div className=' w-11/12 mx-auto'>
+    <div className=' w-11/12 mx-auto mt-10'>
       <div className="flex w-full sm:w-10/12 mx-auto lg:w-full lg:flex-row flex-col justify-center ">
         <div className="w-full  lg:w-3/5 ">
           <img className="w-full h-full"src={HeroPic} alt="" />
