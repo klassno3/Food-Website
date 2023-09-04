@@ -18,7 +18,7 @@ const Hero = () => {
               <p className="font font-poppins capitalize text-sm">85% Would make this again.</p>
 </div>
             </div>
-            <p className="font-poppins text-base sm:text-lg lg:text-center ">Indulge in the ultimate chocolate experience with The Most Amazing Chocolate Cake. Moist, rich, and made in a single bowl. Satisfy your chocolate cravings with the chocolate cake of your dreams.</p>
+            <p className="font-poppins text-sm sm:text-lg lg:text-center ">Indulge in the ultimate chocolate experience with The Most Amazing Chocolate Cake. Moist, rich, and made in a single bowl. Satisfy your chocolate cravings with the chocolate cake of your dreams.</p>
           </div>
 
         </div>
