@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import {GoSearch} from "react-icons/go"
 
 const Search = () => {
