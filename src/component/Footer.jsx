@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from './../images/Logo.svg'
+import Logo from './../image/Logo.svg'
 import {BiLogoFacebook, BiLogoTelegram, BiLogoInstagram, BiLogoTwitter }from 'react-icons/bi'
 const Footer = () => {
   return (
