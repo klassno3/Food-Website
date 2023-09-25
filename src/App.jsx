@@ -61,8 +61,8 @@ function App () {
         },
 
         {
-          path: "/breakfast",
-          element:<Breakfast/>
+          path: "/recipecard",
+          element:<RecipeCard/>
         },
         {
           path: "/dinner",
