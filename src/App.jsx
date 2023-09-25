@@ -7,6 +7,7 @@ import Breakfast from "./pages/BreakFast"
 import Snack from "./pages/Snack"
 import Dinner from "./pages/Dinner"
 import SignUp from "./pages/SignUp"
+import Footer from './Component/Footer.jsx'
 import {
   createBrowserRouter,
   Outlet,
