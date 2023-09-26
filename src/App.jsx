@@ -27,8 +27,8 @@ function App () {
         <Navigation />
         
         <Outlet/>
-     <Footer/>
-      </div>
+{/*      <Footer/>*/}
+      </div> 
     );
   }
   const router = createBrowserRouter([
